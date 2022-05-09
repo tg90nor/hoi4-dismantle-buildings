@@ -1,0 +1,190 @@
+Dismantle_decisions = {
+	activate_dismantle_airbases = {
+		icon = dismantle_airbase
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_airbases } }
+		complete_effect = { set_country_flag = dismantle_airbases }
+	}
+	deactivate_dismantle_airbases = {
+		icon = dismantle_airbase
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_airbases }
+		complete_effect = { clr_country_flag = dismantle_airbases }
+	}
+
+	activate_dismantle_anti_air = {
+		icon = dismantle_anti_air
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_anti_air } }
+		complete_effect = { set_country_flag = dismantle_anti_air }
+	}
+	deactivate_dismantle_anti_air = {
+		icon = dismantle_anti_air
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_anti_air }
+		complete_effect = { clr_country_flag = dismantle_anti_air }
+	}
+
+	activate_dismantle_coastal_forts = {
+		icon = dismantle_coastal_fort
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_coastal_forts } }
+		complete_effect = { set_country_flag = dismantle_coastal_forts }
+	}
+	deactivate_dismantle_coastal_forts = {
+		icon = dismantle_coastal_fort
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_coastal_forts }
+		complete_effect = { clr_country_flag = dismantle_coastal_forts }
+	}
+
+	activate_dismantle_infrastructure = {
+		icon = dismantle_infrastructure
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_infrastructure } }
+		complete_effect = { set_country_flag = dismantle_infrastructure }
+	}
+	deactivate_dismantle_infrastructure = {
+		icon = dismantle_infrastructure
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_infrastructure }
+		complete_effect = { clr_country_flag = dismantle_infrastructure }
+	}
+
+	activate_dismantle_land_forts = {
+		icon = dismantle_land_fort
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_land_forts } }
+		complete_effect = { set_country_flag = dismantle_land_forts }
+	}
+	deactivate_dismantle_land_forts = {
+		icon = dismantle_land_fort
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_land_forts }
+		complete_effect = { clr_country_flag = dismantle_land_forts }
+	}
+
+	activate_dismantle_naval_bases = {
+		icon = dismantle_naval_base
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_naval_bases } }
+		complete_effect = { set_country_flag = dismantle_naval_bases }
+	}
+	deactivate_dismantle_naval_bases = {
+		icon = dismantle_naval_base
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_naval_bases }
+		complete_effect = { clr_country_flag = dismantle_naval_bases }
+	}
+
+	activate_dismantle_radar_stations = {
+		icon = dismantle_radar_station
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_radar_stations } }
+		complete_effect = { set_country_flag = dismantle_radar_stations }
+	}
+	deactivate_dismantle_radar_stations = {
+		icon = dismantle_radar_station
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_radar_stations }
+		complete_effect = { clr_country_flag = dismantle_radar_stations }
+	}
+
+	activate_dismantle_railways = {
+		icon = dismantle_railway
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_railways } }
+		complete_effect = { set_country_flag = dismantle_railways }
+	}
+	deactivate_dismantle_railways = {
+		icon = dismantle_railway
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_railways }
+		complete_effect = { clr_country_flag = dismantle_railways }
+	}
+
+	activate_dismantle_supply_hubs = {
+		icon = dismantle_supply_hub
+		allowed = {} 
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { not = { has_country_flag = dismantle_supply_hubs } }
+		complete_effect = { set_country_flag = dismantle_supply_hubs }
+	}
+	deactivate_dismantle_supply_hubs = {
+		icon = dismantle_supply_hub
+		allowed = {}
+		highlight_states = {}
+		cost = 0
+		fire_only_once = no
+		available = { always = yes }
+		visible = { has_country_flag = dismantle_supply_hubs }
+		complete_effect = { clr_country_flag = dismantle_supply_hubs }
+	}
+}

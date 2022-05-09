@@ -1,0 +1,249 @@
+Dismantle_decisions = {
+	dismantle_airbase = {
+		icon = dismantle_airbase
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_airbases
+      controls_state = FROM
+			FROM = { air_base > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = air_base
+					level = 0
+				}
+			}
+		}
+  }
+
+	dismantle_anti_air = {
+		icon = dismantle_anti_air
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_anti_air
+      controls_state = FROM
+			FROM = { anti_air_building > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = anti_air_building
+					level = 0
+				}
+			}
+		}
+  }
+
+	dismantle_coastal_forts = {
+		icon = dismantle_coastal_fort
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_coastal_forts
+      controls_state = FROM
+			FROM = { coastal_bunker > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 0
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+		}
+  }
+
+	dismantle_infrastructure = {
+		icon = dismantle_infrastructure
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_infrastructure
+      controls_state = FROM
+			FROM = { infrastructure > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = infrastructure
+					level = 0
+				}
+			}
+		}
+  }
+
+	dismantle_land_forts = {
+		icon = dismantle_land_fort
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_land_forts
+      controls_state = FROM
+			FROM = { bunker > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = bunker
+					level = 0
+					province = {
+						all_provinces = yes
+						level > 0
+					}
+				}
+			}
+		}
+  }
+
+	dismantle_naval_bases = {
+		icon = dismantle_naval_base
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_naval_bases
+      controls_state = FROM
+			FROM = { naval_base > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = naval_base
+					level = 0
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+		}
+  }
+
+	dismantle_radar_station = {
+		icon = dismantle_radar_station
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_radar_stations
+      controls_state = FROM
+			FROM = { radar_station > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = radar_station
+					level = 0
+				}
+			}
+		}
+	}
+
+	## Does not currently work, causing damage without removing the railways
+	dismantle_railways = {
+		icon = dismantle_railway
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_railways
+      controls_state = FROM
+			FROM = { rail_way > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = rail_way
+					level = 0
+					province = {
+						all_provinces = yes
+						level > 0
+					}
+				}
+			}
+		}
+	}
+
+	dismantle_supply_hubs = {
+		icon = dismantle_supply_hub
+		allowed = {}
+		state_target = yes
+    target_array = controlled_states
+		cost = 10
+		fire_only_once = no
+		days_remove = 1
+		visible = {
+      has_country_flag = dismantle_supply_hubs
+      controls_state = FROM
+			FROM = { supply_node > 0 }
+    }
+		available = { num_of_civilian_factories_available_for_projects > 5 }
+		modifier = { civilian_factory_use = 5 }
+		complete_effect = {
+			FROM = {
+				set_building_level = {
+					type = supply_node
+					level = 0
+					province = {
+						all_provinces = yes
+						level > 0
+					}
+				}
+			}
+		}
+	}
+}

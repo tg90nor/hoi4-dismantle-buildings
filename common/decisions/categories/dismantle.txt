@@ -1,0 +1,5 @@
+Dismantle_decisions = {
+	icon = generic_industry
+	allowed = { always = yes }
+	priority = { base = 0 }
+}
